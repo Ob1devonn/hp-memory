@@ -1,4 +1,4 @@
-import { Center, Grid, GridItem } from "@chakra-ui/react";
+import { Center, Grid, GridItem, Text } from "@chakra-ui/react";
 import Header from "./components/Header";
 
 function App() {
@@ -7,15 +7,19 @@ function App() {
       templateAreas={`"header"
                       "main"
                       "footer "`}
-      gridTemplateRows={"150px 1fr 30px"}
-      h={"100vh"}
+      gridTemplateRows={"10rem 1fr 2rem"}
     >
       <GridItem area={"header"}>
         <Header />
       </GridItem>
-      <GridItem area={"main"} bg="green.300">
-        Main
-        <Center>Main</Center>
+      <GridItem
+        area={"main"}
+        bg="green.300"
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
+        <Text>Stuff</Text>
       </GridItem>
       <GridItem area={"footer"}>
         <Center>Footer</Center>
