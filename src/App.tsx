@@ -8,7 +8,8 @@ function App() {
       templateAreas={`"header"
                       "main"
                       "footer "`}
-      gridTemplateRows={"10rem 1fr 2rem"}
+      gridTemplateRows={"auto 1fr auto"}
+      h={"100vh"}
     >
       <GridItem area={"header"}>
         <Header />
