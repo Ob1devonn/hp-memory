@@ -1,5 +1,6 @@
-import { Center, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Center, Grid, GridItem } from "@chakra-ui/react";
 import Header from "./components/Header";
+import GameGrid from "./components/GameGrid";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <Text>Stuff</Text>
+        <GameGrid />
       </GridItem>
       <GridItem area={"footer"}>
         <Center>Footer</Center>
